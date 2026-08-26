@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NovaCart | Product Details</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+
+        /* =========================================
+           PRODUCT DETAIL EXTRA STYLING
+           ========================================= */
+
+        .product-features {
+            margin: 0 0 28px;
+
+            padding: 20px;
+
+            background:
+                rgba(255, 255, 255, 0.42);
+
+            backdrop-filter: blur(15px);
+
+            -webkit-backdrop-filter: blur(15px);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.75);
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 10px 30px rgba(55, 48, 40, 0.06);
+        }
+
+
+        .product-features h2 {
+            margin-bottom: 12px;
+
+            color: #252525;
+
+            font-size: 1.05rem;
+        }
+
+
+        .product-features ul {
+            padding-left: 20px;
+
+            color: #6b6862;
+        }
+
+
+        .product-features li {
+            margin: 6px 0;
+        }
+
+
+        /* Add to Cart button */
+
+        .product-detail-info .product-button {
+            border: none;
+
+            min-width: 190px;
+        }
+
+
+        /* Back button */
+
+        .secondary-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 11px 20px;
+
+            border:
+                1px solid rgba(55, 48, 40, 0.12);
+
+            border-radius: 10px;
+
+            background:
+                rgba(255, 255, 255, 0.55);
+
+            color: #404040;
+
+            font-weight: 700;
+
+            transition:
+                background 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+
+        .secondary-button:hover {
+            background:
+                rgba(255, 255, 255, 0.85);
+
+            border-color:
+                rgba(176, 141, 87, 0.40);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        /* Cart message */
+
+        .cart-message {
+            display: none;
+
+            margin-top: 18px;
+
+            padding: 12px 16px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(176, 141, 87, 0.12);
+
+            border:
+                1px solid rgba(176, 141, 87, 0.25);
+
+            color: #806137;
+
+            font-weight: 700;
+
+            animation:
+                messageAppear 0.3s ease;
+        }
+
+
+        .cart-message.show {
+            display: block;
+        }
+
+
+        @keyframes messageAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* Product image */
+
+        .product-detail-image img {
+            width: 100%;
+
+            height: 100%;
+
+            min-height: 500px;
+
+            object-fit: cover;
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .product-detail-image img {
+                min-height: 320px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <a href="index.html">
+                NovaCart
+            </a>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN PRODUCT DETAIL
+         ========================================= -->
+
+    <main>
+
+        <section class="product-detail">
+
+
+            <!-- PRODUCT IMAGE -->
+
+            <div class="product-detail-image">
+
+                <img
+                    id="productImage"
+                    src="images/headphones.jpg"
+                    alt="Wireless Headphones"
+                >
+
+            </div>
+
+
+
+            <!-- PRODUCT INFORMATION -->
+
+            <div class="product-detail-info">
+
+
+                <!-- Category -->
+
+                <p
+                    class="product-category"
+                    id="productCategory"
+                >
+                    AUDIO & ELECTRONICS
+                </p>
+
+
+
+                <!-- Product Name -->
+
+                <h1 id="productName">
+                    Wireless Headphones
+                </h1>
+
+
+
+                <!-- Price -->
+
+                <p
+                    class="product-detail-price"
+                    id="productPrice"
+                >
+                    ₹2,499
+                </p>
+
+
+
+                <!-- Description -->
+
+                <p
+                    class="product-description"
+                    id="productDescription"
+                >
+                    Experience immersive sound and comfortable
+                    listening with NovaCart Wireless Headphones.
+                    Designed for everyday entertainment, work,
+                    study, and travel.
+                </p>
+
+
+
+                <!-- =================================
+                     FEATURES
+                     ================================= -->
+
+                <div class="product-features">
+
+                    <h2>
+                        Product Features
+                    </h2>
+
+                    <ul id="productFeatures">
+
+                        <li>
+                            Immersive wireless audio
+                        </li>
+
+                        <li>
+                            Comfortable over-ear design
+                        </li>
+
+                        <li>
+                            Wireless Bluetooth connectivity
+                        </li>
+
+                        <li>
+                            Suitable for work, study and entertainment
+                        </li>
+
+                        <li>
+                            Portable design for travel
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- =================================
+                     QUANTITY
+                     ================================= -->
+
+                <div class="quantity-selector">
+
+                    <label for="quantity">
+                        Quantity:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                </div>
+
+
+
+                <!-- =================================
+                     ADD TO CART
+                     ================================= -->
+
+                <button
+                    type="button"
+                    class="product-button"
+                    onclick="addToCart()"
+                >
+                    Add to Cart
+                </button>
+
+
+
+                <!-- Added To Cart Message -->
+
+                <div
+                    id="cartMessage"
+                    class="cart-message"
+                >
+                    ✓ Product added to cart successfully!
+                </div>
+
+
+
+                <!-- =================================
+                     BACK TO PRODUCTS
+                     ================================= -->
+
+                <p style="margin-top: 20px;">
+
+                    <a
+                        href="products.html"
+                        class="secondary-button"
+                    >
+                        ← Back to Products
+                    </a>
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h2>
+                    NovaCart
+                </h2>
+
+                <p>
+                    Everything you need. One smart cart.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Email: support@novacart.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 NovaCart. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NovaCart | Products</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <a href="index.html">
+                NovaCart
+            </a>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         PRODUCTS MAIN SECTION
+         ========================================= -->
+
+    <main>
+
+        <section class="products-section">
+
+
+            <!-- Section Heading -->
+
+            <div class="section-heading">
+
+                <p>
+                    NOVACART COLLECTION
+                </p>
+
+                <h1>
+                    All Products
+                </h1>
+
+                <p>
+                    Explore our collection of modern electronics
+                    and lifestyle essentials.
+                </p>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 PRODUCT GRID
+                 ===================================== -->
+
+            <div class="product-grid">
+
+
+                <!-- =================================
+                     PRODUCT 1
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/headphones.jpg"
+                        alt="Wireless Headphones"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Wireless Headphones
+                        </h2>
+
+                        <p class="price">
+                            ₹2,499
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=1"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 2
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/smartwatch.jpg"
+                        alt="Smart Watch"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Smart Watch
+                        </h2>
+
+                        <p class="price">
+                            ₹3,499
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=2"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 3
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/speaker.jpg"
+                        alt="Bluetooth Speaker"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Bluetooth Speaker
+                        </h2>
+
+                        <p class="price">
+                            ₹1,799
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=3"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 4
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/keyboard.jpg"
+                        alt="Mechanical Keyboard"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Mechanical Keyboard
+                        </h2>
+
+                        <p class="price">
+                            ₹2,999
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=4"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 5
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/mouse.jpg"
+                        alt="Wireless Mouse"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Wireless Mouse
+                        </h2>
+
+                        <p class="price">
+                            ₹899
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=5"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 6
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/powerbank.jpg"
+                        alt="Power Bank"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Power Bank
+                        </h2>
+
+                        <p class="price">
+                            ₹1,299
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=6"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 7
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/usbc-hub.jpg"
+                        alt="USB-C Hub"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            USB-C Hub
+                        </h2>
+
+                        <p class="price">
+                            ₹1,499
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=7"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     PRODUCT 8
+                     ================================= -->
+
+                <article class="product-card">
+
+                    <img
+                        src="images/laptop-stand.jpg"
+                        alt="Laptop Stand"
+                    >
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Laptop Stand
+                        </h2>
+
+                        <p class="price">
+                            ₹1,099
+                        </p>
+
+
+                        <a
+                            href="product-detail.html?id=8"
+                            class="product-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <!-- Brand -->
+
+            <div>
+
+                <h2>
+                    NovaCart
+                </h2>
+
+                <p>
+                    Everything you need. One smart cart.
+                </p>
+
+            </div>
+
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Email: support@novacart.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 NovaCart.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>
